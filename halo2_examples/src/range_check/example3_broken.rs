@@ -1,12 +1,10 @@
 use halo2_proofs::{
-    arithmetic::FieldExt,
     circuit::{AssignedCell, Layouter, Value},
-    plonk::{
-        Advice, Assigned, Column, ConstraintSystem, Constraints, Error, Expression, Selector,
-        TableColumn,
-    },
+    plonk::{Advice, Assigned, Column, ConstraintSystem, Error, Selector},
     poly::Rotation,
 };
+
+use group::ff::PrimeField as Field;
 
 mod table;
 use table::*;
@@ -29,20 +27,20 @@ use table::*;
 
 #[derive(Debug, Clone)]
 /// A range-constrained value in the circuit produced by the RangeCheckConfig.
-struct RangeConstrained<F: FieldExt> {
+struct RangeConstrained<F: Field> {
     num_bits: AssignedCell<Assigned<F>, F>,
     assigned_cell: AssignedCell<Assigned<F>, F>,
 }
 
 #[derive(Debug, Clone)]
-struct RangeCheckConfig<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> {
+struct RangeCheckConfig<F: Field, const NUM_BITS: usize, const RANGE: usize> {
     q_lookup: Selector,
     num_bits: Column<Advice>,
     value: Column<Advice>,
     table: RangeTableConfig<F, NUM_BITS, RANGE>,
 }
 
-impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeCheckConfig<F, NUM_BITS, RANGE> {
+impl<F: Field, const NUM_BITS: usize, const RANGE: usize> RangeCheckConfig<F, NUM_BITS, RANGE> {
     pub fn configure(
         meta: &mut ConstraintSystem<F>,
         num_bits: Column<Advice>,
@@ -120,12 +118,12 @@ mod tests {
     use super::*;
 
     #[derive(Default)]
-    struct MyCircuit<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> {
+    struct MyCircuit<F: Field, const NUM_BITS: usize, const RANGE: usize> {
         num_bits: Value<u8>,
         value: Value<Assigned<F>>,
     }
 
-    impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> Circuit<F>
+    impl<F: Field, const NUM_BITS: usize, const RANGE: usize> Circuit<F>
         for MyCircuit<F, NUM_BITS, RANGE>
     {
         type Config = RangeCheckConfig<F, NUM_BITS, RANGE>;
