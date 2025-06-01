@@ -1,0 +1,27 @@
+[package]
+name = "korrekt_minial"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+korrekt = { path = "./korrekt" }
+fibonacci = { path = "./halo2_examples" }
+
+[workspace]
+members = ["korrekt", "halo2_examples"]
+
+
+[patch."https://github.com/privacy-scaling-explorations/halo2curves.git"]
+halo2curves = { git = "https://github.com/quantstamp/halo2curves.git", branch = "analyzer" }
+
+[patch."https://github.com/zcash/halo2.git"]
+zcash_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/zcash-halo2.git", package = "halo2_proofs" }
+
+[patch."https://github.com/privacy-scaling-explorations/halo2.git"]
+pse_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/pse-halo2.git", package = "halo2_proofs" }
+
+[patch."https://github.com/axiom-crypto/halo2.git"]
+axiom_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/axiom-halo2.git", package = "halo2-axiom" }
+
+[patch."https://github.com/scroll-tech/halo2.git"]
+scroll_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/scroll-halo2.git", package = "halo2_proofs" }

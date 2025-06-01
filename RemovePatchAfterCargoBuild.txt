@@ -1,0 +1,891 @@
+a@a-VirtualBox:~/Downloads/halo2-analyzer-main$ cargo build
+warning: patch for the non root package will be ignored, specify patch at the workspace root:
+package:   /home/a/Downloads/halo2-analyzer-main/korrekt/Cargo.toml
+workspace: /home/a/Downloads/halo2-analyzer-main/Cargo.toml
+    Updating git repository `https://github.com/axiom-crypto/halo2.git`
+    Updating git repository `https://github.com/privacy-scaling-explorations/halo2curves`
+    Updating git repository `https://github.com/privacy-scaling-explorations/halo2.git`
+    Updating git repository `https://github.com/privacy-scaling-explorations/halo2.git`
+    Updating git repository `https://github.com/scroll-tech/halo2.git`
+    Updating git repository `https://github.com/zcash/halo2.git`
+    Updating git repository `https://github.com/zcash/halo2.git`
+    Updating crates.io index
+     Locking 15 packages to latest Rust 1.89.0-nightly compatible versions
+      Adding blake2 v0.10.6
+      Adding halo2-axiom v0.5.0 (https://github.com/axiom-crypto/halo2.git#4e584896)
+      Adding halo2_backend v0.4.0 (https://github.com/privacy-scaling-explorations/halo2.git#42b7a542)
+      Adding halo2_frontend v0.4.0 (https://github.com/privacy-scaling-explorations/halo2.git#42b7a542)
+      Adding halo2_middleware v0.4.0 (https://github.com/privacy-scaling-explorations/halo2.git#42b7a542)
+      Adding halo2_proofs v0.2.0 (https://github.com/privacy-scaling-explorations/halo2.git?tag=v2022_08_19#0cccba00)
+      Adding halo2_proofs v0.1.0 (https://github.com/zcash/halo2.git?rev=a898d65ae3ad3d41987666f6a03cfc15edae01c4#a898d65a)
+      Adding halo2_proofs v0.4.0 (https://github.com/privacy-scaling-explorations/halo2.git#42b7a542)
+      Adding halo2_proofs v1.1.0 (https://github.com/scroll-tech/halo2.git#1492fd07)
+      Adding halo2_proofs v0.3.0 (https://github.com/zcash/halo2.git#fed6b000)
+    Updating halo2curves v0.6.1 -> v0.7.0
+      Adding halo2curves v0.2.1 (https://github.com/privacy-scaling-explorations/halo2curves?tag=0.2.1#f75ed26c)
+    Updating halo2curves-axiom v0.5.3 -> v0.7.0
+      Adding halo2derive v0.1.0
+      Adding unroll v0.1.5
+   Compiling libc v0.2.172
+   Compiling cfg-if v1.0.0
+   Compiling autocfg v1.4.0
+   Compiling radium v0.7.0
+   Compiling proc-macro2 v1.0.95
+   Compiling tap v1.0.1
+   Compiling wyz v0.5.1
+   Compiling zerocopy v0.8.25
+   Compiling unicode-ident v1.0.18
+   Compiling funty v2.0.0
+   Compiling getrandom v0.2.16
+   Compiling bitvec v1.0.1
+   Compiling rand_core v0.6.4
+   Compiling crossbeam-utils v0.8.21
+   Compiling subtle v2.6.1
+   Compiling quote v1.0.40
+   Compiling num-traits v0.2.19
+   Compiling crossbeam-epoch v0.9.18
+   Compiling rayon-core v1.12.1
+   Compiling constant_time_eq v0.3.1
+   Compiling ppv-lite86 v0.2.21
+   Compiling spin v0.9.8
+   Compiling arrayref v0.3.9
+   Compiling arrayvec v0.7.6
+   Compiling lazy_static v1.5.0
+   Compiling crossbeam-deque v0.8.6
+   Compiling blake2b_simd v1.0.3
+   Compiling syn v2.0.101
+   Compiling rand_chacha v0.3.1
+   Compiling static_assertions v1.1.0
+   Compiling rand v0.8.5
+   Compiling ff v0.12.1
+   Compiling num-integer v0.1.46
+   Compiling either v1.15.0
+   Compiling group v0.12.1
+   Compiling rayon v1.10.0
+   Compiling memchr v2.7.4
+   Compiling pasta_curves v0.4.1
+   Compiling aho-corasick v1.1.3
+   Compiling num-bigint v0.4.6
+   Compiling ff v0.13.1
+   Compiling indexmap v1.9.3
+   Compiling serde v1.0.219
+   Compiling once_cell v1.21.3
+   Compiling syn v1.0.109
+   Compiling regex-syntax v0.8.5
+   Compiling tracing-core v0.1.33
+   Compiling tracing-attributes v0.1.28
+   Compiling serde_derive v1.0.219
+   Compiling group v0.13.0
+   Compiling atty v0.2.14
+   Compiling anyhow v1.0.98
+   Compiling termcolor v1.4.1
+   Compiling pin-project-lite v0.2.16
+   Compiling hashbrown v0.12.3
+   Compiling regex-automata v0.4.9
+   Compiling os_str_bytes v6.6.1
+   Compiling clap_lex v0.2.4
+   Compiling tracing v0.1.41
+   Compiling pasta_curves v0.5.1
+   Compiling regex v1.11.1
+   Compiling num-rational v0.4.2
+   Compiling maybe-rayon v0.1.1
+   Compiling num-iter v0.1.45
+   Compiling num-complex v0.4.6
+   Compiling strsim v0.10.0
+   Compiling humantime v2.2.0
+   Compiling bitflags v1.3.2
+   Compiling textwrap v0.16.2
+   Compiling log v0.4.27
+   Compiling num v0.4.3
+   Compiling clap v3.2.25
+   Compiling env_logger v0.9.3
+   Compiling toml v0.5.11
+   Compiling try-catch v0.2.2
+   Compiling halo2_proofs v0.3.0 (https://github.com/zcash/halo2.git#fed6b000)
+   Compiling halo2curves v0.2.1 (https://github.com/privacy-scaling-explorations/halo2curves?tag=0.2.1#f75ed26c)
+   Compiling halo2_proofs v0.1.0 (https://github.com/zcash/halo2.git?rev=a898d65ae3ad3d41987666f6a03cfc15edae01c4#a898d65a)
+   Compiling korrekt v0.1.0 (/home/a/Downloads/halo2-analyzer-main/korrekt)
+error[E0603]: enum `CellValue` is private
+  --> korrekt/src/circuit_analyzer/halo2_proofs_libs.rs:6:11
+   |
+6  |     dev::{CellValue, Region},
+   |           ^^^^^^^^^ private enum
+   |
+note: the enum `CellValue` is defined here
+  --> /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/dev.rs:77:1
+   |
+77 | enum CellValue<F: Field> {
+   | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0603]: struct `Region` is private
+  --> korrekt/src/circuit_analyzer/halo2_proofs_libs.rs:6:22
+   |
+6  |     dev::{CellValue, Region},
+   |                      ^^^^^^ private struct
+   |
+note: the struct `Region` is defined here
+  --> /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/dev.rs:42:1
+   |
+42 | struct Region {
+   | ^^^^^^^^^^^^^
+
+error[E0603]: module `permutation` is private
+  --> korrekt/src/circuit_analyzer/halo2_proofs_libs.rs:9:9
+   |
+9  | ...   permutation, Advice, Any, Assigned, Assignment, Circuit, Column, C...
+   |       ^^^^^^^^^^^ private module
+   |
+note: the module `permutation` is defined here
+  --> /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk.rs:23:1
+   |
+23 | pub(crate) mod permutation;
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0603]: module `fr` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:130:30
+    |
+130 |         let modulus = bn256::fr::MODULUS_STR;
+    |                              ^^  ----------- constant `MODULUS_STR` is not publicly re-exported
+    |                              |
+    |                              private module
+    |
+note: the module `fr` is defined here
+   --> /home/a/.cargo/git/checkouts/halo2curves-18d76c2fc9238210/f75ed26/src/bn256/mod.rs:6:1
+    |
+6   | mod fr;
+    | ^^^^^^
+
+warning: unused import: `AnalyzerType`
+ --> korrekt/src/config.rs:2:20
+  |
+2 |     AnalyzerInput, AnalyzerType, LookupMethod, VerificationInput, Verific...
+  |                    ^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `halo2_proofs_libs::*`
+ --> korrekt/src/io/analyzer_io.rs:2:53
+  |
+2 |     circuit_analyzer::{analyzable::AnalyzableField, halo2_proofs_libs::*},
+  |                                                     ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `Context`
+ --> korrekt/src/io/analyzer_io.rs:7:22
+  |
+7 | use anyhow::{anyhow, Context, Result};
+  |                      ^^^^^^^
+
+warning: unused import: `net::IpAddr`
+ --> korrekt/src/sample_circuits/zcash/simple/steps.rs:2:32
+  |
+2 | use std::{marker::PhantomData, net::IpAddr};
+  |                                ^^^^^^^^^^^
+
+warning: unused imports: `Expression`, `dev::MockProver`, and `layouter`
+ --> korrekt/src/sample_circuits/zcash/simple/steps.rs:5:15
+  |
+5 |     circuit::{layouter, AssignedCell, Layouter, SimpleFloorPlanner, Value},
+  |               ^^^^^^^^
+6 |     dev::MockProver,
+  |     ^^^^^^^^^^^^^^^
+7 |     plonk::{Advice, Circuit, Column, ConstraintSystem, Error, Expression, F...
+  |                                                               ^^^^^^^^^^
+
+warning: unused import: `net::IpAddr`
+ --> korrekt/src/sample_circuits/zcash/simple/steps_with_fixed.rs:2:32
+  |
+2 | use std::{marker::PhantomData, net::IpAddr};
+  |                                ^^^^^^^^^^^
+
+warning: unused imports: `Expression`, `dev::MockProver`, and `layouter`
+ --> korrekt/src/sample_circuits/zcash/simple/steps_with_fixed.rs:5:15
+  |
+5 |     circuit::{layouter, AssignedCell, Layouter, SimpleFloorPlanner, Value},
+  |               ^^^^^^^^
+6 |     dev::MockProver,
+  |     ^^^^^^^^^^^^^^^
+7 |     plonk::{Advice, Circuit, Column, ConstraintSystem, Error, Expression, F...
+  |                                                               ^^^^^^^^^^
+
+warning: unused import: `NodeType`
+ --> korrekt/src/smt_solver/smt.rs:4:61
+  |
+4 | use crate::circuit_analyzer::analyzer::{self, NodeCategory, NodeType};
+  |                                                             ^^^^^^^^
+
+error[E0616]: field `column_index` of struct `AdviceQuery` is private
+  --> korrekt/src/circuit_analyzer/abstract_expr.rs:34:41
+   |
+34 |                     index: advice_query.column_index,
+   |                                         ^^^^^^^^^^^^ private field
+
+error[E0599]: the method `insert` exists for mutable reference `&mut HashSet<(Column<Any>, Rotation)>`, but its trait bounds were not satisfied
+   --> korrekt/src/circuit_analyzer/abstract_expr.rs:37:21
+    |
+37  |                 dst.insert((column.into(), advice_query.rotation));
+    |                     ^^^^^^
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/poly.rs:306:1
+    |
+306 | pub struct Rotation(pub i32);
+    | ------------------- doesn't satisfy `halo2_proofs::poly::Rotation: Hash`
+    |
+    = note: the following trait bounds were not satisfied:
+            `halo2_proofs::poly::Rotation: Hash`
+            which is required by `(halo2_proofs::plonk::Column<halo2_proofs::plonk::Any>, halo2_proofs::poly::Rotation): Hash`
+
+error[E0616]: field `rotation` of struct `AdviceQuery` is private
+  --> korrekt/src/circuit_analyzer/abstract_expr.rs:37:57
+   |
+37 |                 dst.insert((column.into(), advice_query.rotation));
+   |                                                         ^^^^^^^^ private field
+
+error[E0616]: field `column_index` of struct `FixedQuery` is private
+  --> korrekt/src/circuit_analyzer/abstract_expr.rs:95:35
+   |
+95 |             let col = fixed_query.column_index;
+   |                                   ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `FixedQuery` is private
+  --> korrekt/src/circuit_analyzer/abstract_expr.rs:96:36
+   |
+96 | ...   let row = (fixed_query.rotation.0 + row_num) as usize + region_begin;
+   |                              ^^^^^^^^ private field
+
+error[E0308]: mismatched types
+  --> korrekt/src/circuit_analyzer/abstract_expr.rs:97:22
+   |
+72 | pub fn eval_abstract<F: AnalyzableField>(
+   |                      - expected this type parameter
+...
+97 |             if col < fixed.len() && row < fixed[0].len() {
+   |                      ^^^^^^^^^^^ expected type parameter `F`, found `usize`
+   |
+   = note: expected type parameter `F`
+                        found type `usize`
+
+error[E0308]: mismatched types
+  --> korrekt/src/circuit_analyzer/abstract_expr.rs:97:43
+   |
+72 | pub fn eval_abstract<F: AnalyzableField>(
+   |                      - expected this type parameter
+...
+97 |             if col < fixed.len() && row < fixed[0].len() {
+   |                                           ^^^^^^^^^^^^^^ expected type parameter `F`, found `usize`
+   |
+   = note: expected type parameter `F`
+                        found type `usize`
+
+error[E0308]: mismatched types
+  --> korrekt/src/circuit_analyzer/abstract_expr.rs:98:46
+   |
+72 | pub fn eval_abstract<F: AnalyzableField>(
+   |                      - expected this type parameter
+...
+98 |                 if fixed[col][row].sign() == Sign::NoSign {
+   |                                              ^^^^^^^^^^^^ expected type parameter `F`, found `Sign`
+   |
+   = note: expected type parameter `F`
+                        found enum `num_bigint::Sign`
+   = note: `num_bigint::Sign` implements `PartialEq<{type error}>`
+help: consider swapping the equality
+   |
+98 -                 if fixed[col][row].sign() == Sign::NoSign {
+98 +                 if Sign::NoSign == fixed[col][row].sign() {
+   |
+
+error[E0616]: field `column_index` of struct `AdviceQuery` is private
+   --> korrekt/src/circuit_analyzer/abstract_expr.rs:110:30
+    |
+110 |                 advice_query.column_index,
+    |                              ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `AdviceQuery` is private
+   --> korrekt/src/circuit_analyzer/abstract_expr.rs:111:30
+    |
+111 |                 advice_query.rotation.0 + row_num + region_begin as i32
+    |                              ^^^^^^^^ private field
+
+error[E0616]: field `column_index` of struct `InstanceQuery` is private
+   --> korrekt/src/circuit_analyzer/abstract_expr.rs:124:32
+    |
+124 |                 instance_query.column_index,
+    |                                ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `InstanceQuery` is private
+   --> korrekt/src/circuit_analyzer/abstract_expr.rs:125:32
+    |
+125 |                 instance_query.rotation.0 + row_num + region_begin as i32
+    |                                ^^^^^^^^ private field
+
+error[E0624]: associated function `not_enough_rows_available` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:104:31
+    |
+104 |             return Err(Error::not_enough_rows_available(self.k));
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^ private associated function
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk/error.rs:54:5
+    |
+54  |     pub(crate) fn not_enough_rows_available(current_k: u32) -> Self {
+    |     --------------------------------------------------------------- private associated function defined here
+
+error[E0616]: field `0` of struct `halo2_proofs::plonk::Selector` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:116:33
+    |
+116 |         self.selectors[selector.0][row] = true;
+    |                                 ^ private field
+
+error[E0624]: associated function `not_enough_rows_available` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:205:31
+    |
+205 |             return Err(Error::not_enough_rows_available(self.k));
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^ private associated function
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk/error.rs:54:5
+    |
+54  |     pub(crate) fn not_enough_rows_available(current_k: u32) -> Self {
+    |     --------------------------------------------------------------- private associated function defined here
+
+error[E0624]: method `index` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:226:29
+    |
+226 |             .get_mut(column.index())
+    |                             ^^^^^ private method
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk/circuit.rs:36:5
+    |
+36  |     pub(crate) fn index(&self) -> usize {
+    |     ----------------------------------- private method defined here
+
+error[E0624]: method `assign` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:229:62
+    |
+229 |             CellValue::Assigned(to().into_field().evaluate().assign()?);
+    |                                                              ^^^^^^ private method
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/circuit/value.rs:48:5
+    |
+48  |     pub(crate) fn assign(self) -> Result<V, Error> {
+    |     ---------------------------------------------- private method defined here
+
+error[E0624]: associated function `not_enough_rows_available` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:272:31
+    |
+272 |             return Err(Error::not_enough_rows_available(self.k));
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^ private associated function
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk/error.rs:54:5
+    |
+54  |     pub(crate) fn not_enough_rows_available(current_k: u32) -> Self {
+    |     --------------------------------------------------------------- private associated function defined here
+
+error[E0624]: associated function `not_enough_rows_available` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:314:31
+    |
+314 |             return Err(Error::not_enough_rows_available(self.k));
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^ private associated function
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk/error.rs:54:5
+    |
+54  |     pub(crate) fn not_enough_rows_available(current_k: u32) -> Self {
+    |     --------------------------------------------------------------- private associated function defined here
+
+error[E0624]: associated function `not_enough_rows_available` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:414:31
+    |
+414 |             return Err(Error::not_enough_rows_available(k));
+    |                               ^^^^^^^^^^^^^^^^^^^^^^^^^ private associated function
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk/error.rs:54:5
+    |
+54  |     pub(crate) fn not_enough_rows_available(current_k: u32) -> Self {
+    |     --------------------------------------------------------------- private associated function defined here
+
+error[E0616]: field `num_fixed_columns` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:418:61
+    |
+418 | ...nassigned; n]; cs.num_fixed_columns];
+    |                      ^^^^^^^^^^^^^^^^^ private field
+
+error[E0616]: field `num_selectors` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:419:49
+    |
+419 |         let selectors = vec![vec![false; n]; cs.num_selectors];
+    |                                                 ^^^^^^^^^^^^^ private field
+
+error[E0616]: field `permutation` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:423:69
+    |
+423 | ...Assembly::new(n, &cs.permutation);
+    |                         ^^^^^^^^^^^ private field
+
+error[E0616]: field `constants` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzable.rs:424:28
+    |
+424 |         let constants = cs.constants.clone();
+    |                            ^^^^^^^^^ private field
+
+error[E0624]: method `compress_selectors` is private
+    --> korrekt/src/circuit_analyzer/analyzable.rs:447:14
+     |
+447  |             .compress_selectors(analyzable.selectors.clone());
+     |              ^^^^^^^^^^^^^^^^^^ private method
+     |
+    ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/plonk/circuit.rs:1237:5
+     |
+1237 |     pub(crate) fn compress_selectors(mut self, selectors: Vec<Vec<bool>>) -> (Self, Vec<Vec<F>>) {
+     |     -------------------------------------------------------------------------------------------- private method defined here
+
+error[E0616]: field `selector_map` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:165:40
+    |
+165 |         for selector in &analyzable.cs.selector_map {
+    |                                        ^^^^^^^^^^^^ private field
+
+error[E0616]: field `gates` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:304:29
+    |
+304 |         for gate in self.cs.gates.iter() {
+    |                             ^^^^^ private field
+
+error[E0308]: mismatched types
+   --> korrekt/src/circuit_analyzer/analyzer.rs:311:61
+    |
+123 | impl<'b, F: AnalyzableField> Analyzer<F> {
+    |          - expected this type parameter
+...
+311 |                 .filter(|reg| reg.enabled_selectors.len() > 0)
+    |                                                             ^ expected type parameter `F`, found integer
+    |
+    = note: expected type parameter `F`
+                         found type `{integer}`
+
+error[E0616]: field `advice_queries` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:366:43
+    |
+366 |         for (column, rotation) in self.cs.advice_queries.iter().cloned() {
+    |                                           ^^^^^^^^^^^^^^ private field
+
+error[E0616]: field `gates` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:369:33
+    |
+369 |             for gate in self.cs.gates.iter() {
+    |                                 ^^^^^ private field
+
+error[E0599]: the method `contains` exists for struct `HashSet<(Column<Any>, Rotation)>`, but its trait bounds were not satisfied
+   --> korrekt/src/circuit_analyzer/analyzer.rs:372:32
+    |
+372 |                     if advices.contains(&(column.into(), rotation)) {
+    |                                ^^^^^^^^ method cannot be called on `HashSet<(Column<Any>, Rotation)>` due to unsatisfied trait bounds
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/poly.rs:306:1
+    |
+306 | pub struct Rotation(pub i32);
+    | ------------------- doesn't satisfy `halo2_proofs::poly::Rotation: Hash`
+    |
+    = note: the following trait bounds were not satisfied:
+            `halo2_proofs::poly::Rotation: Hash`
+            which is required by `(halo2_proofs::plonk::Column<halo2_proofs::plonk::Any>, halo2_proofs::poly::Rotation): Hash`
+
+error[E0616]: field `gates` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:419:49
+    |
+419 | ...                   for gate in self.cs.gates.iter() {
+    |                                           ^^^^^ private field
+
+error[E0599]: the method `contains` exists for struct `HashSet<(Column<Any>, Rotation)>`, but its trait bounds were not satisfied
+   --> korrekt/src/circuit_analyzer/analyzer.rs:438:46
+    |
+437 |   ...                    && advices
+    |  ___________________________-
+438 | | ...                        .contains(&(reg_column, Rotation(rotation ...
+    | |                            -^^^^^^^^ method cannot be called on `HashSet<(Column<Any>, Rotation)>` due to unsatisfied trait bounds
+    | |____________________________|
+    |
+    |
+   ::: /home/a/.cargo/git/checkouts/halo2-d311a453786cafa6/fed6b00/halo2_proofs/src/poly.rs:306:1
+    |
+306 |   pub struct Rotation(pub i32);
+    |   ------------------- doesn't satisfy `halo2_proofs::poly::Rotation: Hash`
+    |
+    = note: the following trait bounds were not satisfied:
+            `halo2_proofs::poly::Rotation: Hash`
+            which is required by `(halo2_proofs::plonk::Column<halo2_proofs::plonk::Any>, halo2_proofs::poly::Rotation): Hash`
+
+   Compiling fibonacci v0.1.0 (/home/a/Downloads/halo2-analyzer-main/halo2_examples)
+error[E0308]: mismatched types
+   --> korrekt/src/circuit_analyzer/analyzer.rs:488:50
+    |
+123 | impl<'b, F: AnalyzableField> Analyzer<F> {
+    |          - expected this type parameter
+...
+488 |                 if permutation.sizes[col][row] > 1 {
+    |                                                  ^ expected type parameter `F`, found integer
+    |
+    = note: expected type parameter `F`
+                         found type `{integer}`
+
+error[E0308]: mismatched types
+   --> korrekt/src/circuit_analyzer/analyzer.rs:494:42
+    |
+123 | impl<'b, F: AnalyzableField> Analyzer<F> {
+    |          - expected this type parameter
+...
+494 |                     while cycle_length > 1 {
+    |                                          ^ expected type parameter `F`, found integer
+    |
+    = note: expected type parameter `F`
+                         found type `{integer}`
+
+error[E0616]: field `lookups` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:652:31
+    |
+652 |         let lookups = self.cs.lookups.clone();
+    |                               ^^^^^^^ private field
+
+error[E0616]: field `column_index` of struct `FixedQuery` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:668:50
+    |
+668 |                     col_indices.push(fixed_query.column_index);
+    |                                                  ^^^^^^^^^^^^ private field
+
+error[E0616]: field `column_index` of struct `FixedQuery` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:813:39
+    |
+813 |                 let col = fixed_query.column_index;
+    |                                       ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `FixedQuery` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:814:40
+    |
+814 | ...   let row = (fixed_query.rotation.0 + row_num) as usize + region_be...
+    |                              ^^^^^^^^ private field
+
+error[E0308]: mismatched types
+   --> korrekt/src/circuit_analyzer/analyzer.rs:816:26
+    |
+123 | impl<'b, F: AnalyzableField> Analyzer<F> {
+    |          - expected this type parameter
+...
+816 |                 if col < fixed.len() && row < fixed[col].len() {
+    |                          ^^^^^^^^^^^ expected type parameter `F`, found `usize`
+    |
+    = note: expected type parameter `F`
+                         found type `usize`
+
+error[E0308]: mismatched types
+   --> korrekt/src/circuit_analyzer/analyzer.rs:820:36
+    |
+123 | impl<'b, F: AnalyzableField> Analyzer<F> {
+    |          - expected this type parameter
+...
+820 |                     if t.sign() == Sign::NoSign {
+    |                                    ^^^^^^^^^^^^ expected type parameter `F`, found `Sign`
+    |
+    = note: expected type parameter `F`
+                         found enum `num_bigint::Sign`
+    = note: `num_bigint::Sign` implements `PartialEq<{type error}>`
+help: consider swapping the equality
+    |
+820 -                     if t.sign() == Sign::NoSign {
+820 +                     if Sign::NoSign == t.sign() {
+    |
+
+error[E0308]: mismatched types
+   --> korrekt/src/circuit_analyzer/analyzer.rs:826:37
+    |
+123 | impl<'b, F: AnalyzableField> Analyzer<F> {
+    |          - expected this type parameter
+...
+826 |                     } else if *t == BigInt::from(1) {
+    |                                     ^^^^^^^^^^^^^^^ expected type parameter `F`, found `BigInt`
+    |
+    = note: expected type parameter `F`
+                       found struct `BigInt`
+    = note: `BigInt` implements `PartialEq<{type error}>`
+help: consider swapping the equality
+    |
+826 -                     } else if *t == BigInt::from(1) {
+826 +                     } else if BigInt::from(1) == *t {
+    |
+
+error[E0616]: field `column_index` of struct `AdviceQuery` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:842:34
+    |
+842 |                     advice_query.column_index,
+    |                                  ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `AdviceQuery` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:843:34
+    |
+843 | ...   advice_query.rotation.0 + row_num + region_begin as i32
+    |                    ^^^^^^^^ private field
+
+error[E0616]: field `column_index` of struct `InstanceQuery` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:866:36
+    |
+866 |                     instance_query.column_index,
+    |                                    ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `InstanceQuery` is private
+   --> korrekt/src/circuit_analyzer/analyzer.rs:867:36
+    |
+867 | ...   instance_query.rotation.0 + row_num + region_begin as i32
+    |                      ^^^^^^^^ private field
+
+warning: unused imports: `Constraints`, `Expression`, and `TableColumn`
+ --> halo2_examples/src/range_check/example3_broken.rs:5:53
+  |
+5 | ...   Advice, Assigned, Column, ConstraintSystem, Constraints, Error, Expression, S...
+  |                                                   ^^^^^^^^^^^         ^^^^^^^^^^
+6 | ...   TableColumn,
+  |       ^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+error[E0616]: field `column_index` of struct `FixedQuery` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1150:39
+     |
+1150 |                 let col = fixed_query.column_index;
+     |                                       ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `FixedQuery` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1151:40
+     |
+1151 | ...   let row = (fixed_query.rotation.0 + row_num) as usize + region_b...
+     |                              ^^^^^^^^ private field
+
+error[E0308]: mismatched types
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1154:32
+     |
+123  | impl<'b, F: AnalyzableField> Analyzer<F> {
+     |          - expected this type parameter
+...
+1154 |                 if t.sign() == Sign::NoSign {
+     |                                ^^^^^^^^^^^^ expected type parameter `F`, found `Sign`
+     |
+     = note: expected type parameter `F`
+                          found enum `num_bigint::Sign`
+     = note: `num_bigint::Sign` implements `PartialEq<{type error}>`
+help: consider swapping the equality
+     |
+1154 -                 if t.sign() == Sign::NoSign {
+1154 +                 if Sign::NoSign == t.sign() {
+     |
+
+error[E0308]: mismatched types
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1161:33
+     |
+123  | impl<'b, F: AnalyzableField> Analyzer<F> {
+     |          - expected this type parameter
+...
+1161 |                 } else if *t == BigInt::from(1) {
+     |                                 ^^^^^^^^^^^^^^^ expected type parameter `F`, found `BigInt`
+     |
+     = note: expected type parameter `F`
+                        found struct `BigInt`
+     = note: `BigInt` implements `PartialEq<{type error}>`
+help: consider swapping the equality
+     |
+1161 -                 } else if *t == BigInt::from(1) {
+1161 +                 } else if BigInt::from(1) == *t {
+     |
+
+error[E0616]: field `column_index` of struct `AdviceQuery` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1176:34
+     |
+1176 |                     advice_query.column_index,
+     |                                  ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `AdviceQuery` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1177:34
+     |
+1177 | ...   advice_query.rotation.0 + row_num + region_begin as i32
+     |                    ^^^^^^^^ private field
+
+error[E0616]: field `column_index` of struct `InstanceQuery` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1195:36
+     |
+1195 |                     instance_query.column_index,
+     |                                    ^^^^^^^^^^^^ private field
+
+error[E0616]: field `rotation` of struct `InstanceQuery` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1196:36
+     |
+1196 | ...   instance_query.rotation.0 + row_num + region_begin as i32
+     |                      ^^^^^^^^ private field
+
+error[E0616]: field `gates` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1472:45
+     |
+1472 |                         for gate in self.cs.gates.iter() {
+     |                                             ^^^^^ private field
+
+error[E0616]: field `lookups` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1540:43
+     |
+1540 |                     for lookup in self.cs.lookups.iter() {
+     |                                           ^^^^^^^ private field
+
+error[E0616]: field `column_index` of struct `FixedQuery` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1576:62
+     |
+1576 | ...                   col_indices.push(fixed_query.column_index);
+     |                                                    ^^^^^^^^^^^^ private field
+
+error[E0616]: field `lookups` of struct `halo2_proofs::plonk::ConstraintSystem` is private
+    --> korrekt/src/circuit_analyzer/analyzer.rs:1736:43
+     |
+1736 |                     let lookups = self.cs.lookups.clone();
+     |                                           ^^^^^^^ private field
+
+warning: struct `ACell` is never constructed
+ --> halo2_examples/src/fibonacci/example2.rs:5:8
+  |
+5 | struct ACell<F: FieldExt>(AssignedCell<F, F>);
+  |        ^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: struct `RangeConstrained` is never constructed
+  --> halo2_examples/src/range_check/example1.rs:19:8
+   |
+19 | struct RangeConstrained<F: FieldExt, const RANGE: usize>(AssignedCell<As...
+   |        ^^^^^^^^^^^^^^^^
+
+warning: struct `RangeCheckConfig` is never constructed
+  --> halo2_examples/src/range_check/example1.rs:22:8
+   |
+22 | struct RangeCheckConfig<F: FieldExt, const RANGE: usize> {
+   |        ^^^^^^^^^^^^^^^^
+
+warning: associated items `configure` and `assign` are never used
+  --> halo2_examples/src/range_check/example1.rs:29:12
+   |
+28 | impl<F: FieldExt, const RANGE: usize> RangeCheckConfig<F, RANGE> {
+   | ---------------------------------------------------------------- associated items in this implementation
+29 |     pub fn configure(meta: &mut ConstraintSystem<F>, value: Column<Advic...
+   |            ^^^^^^^^^
+...
+59 |     pub fn assign(
+   |            ^^^^^^
+
+warning: struct `RangeConstrained` is never constructed
+  --> halo2_examples/src/range_check/example2.rs:23:8
+   |
+23 | struct RangeConstrained<F: FieldExt, const RANGE: usize>(AssignedCell<As...
+   |        ^^^^^^^^^^^^^^^^
+
+warning: struct `RangeCheckConfig` is never constructed
+  --> halo2_examples/src/range_check/example2.rs:26:8
+   |
+26 | struct RangeCheckConfig<F: FieldExt, const RANGE: usize, const LOOKUP_RA...
+   |        ^^^^^^^^^^^^^^^^
+
+warning: associated items `configure`, `assign_simple`, and `assign_lookup` are never used
+  --> halo2_examples/src/range_check/example2.rs:36:12
+   |
+33 | / impl<F: FieldExt, const RANGE: usize, const LOOKUP_RANGE: usize>
+34 | |     RangeCheckConfig<F, RANGE, LOOKUP_RANGE>
+   | |____________________________________________- associated items in this implementation
+35 |   {
+36 |       pub fn configure(meta: &mut ConstraintSystem<F>, value: Column<Adv...
+   |              ^^^^^^^^^
+...
+76 |       pub fn assign_simple(
+   |              ^^^^^^^^^^^^^
+...
+97 |       pub fn assign_lookup(
+   |              ^^^^^^^^^^^^^
+
+warning: struct `RangeTableConfig` is never constructed
+  --> halo2_examples/src/range_check/example2/table.rs:11:19
+   |
+11 | pub(super) struct RangeTableConfig<F: FieldExt, const RANGE: usize> {
+   |                   ^^^^^^^^^^^^^^^^
+
+warning: associated items `configure` and `load` are never used
+  --> halo2_examples/src/range_check/example2/table.rs:17:19
+   |
+16 | impl<F: FieldExt, const RANGE: usize> RangeTableConfig<F, RANGE> {
+   | ---------------------------------------------------------------- associated items in this implementation
+17 |     pub(super) fn configure(meta: &mut ConstraintSystem<F>) -> Self {
+   |                   ^^^^^^^^^
+...
+26 |     pub(super) fn load(&self, layouter: &mut impl Layouter<F>) -> Result...
+   |                   ^^^^
+
+warning: struct `RangeConstrained` is never constructed
+  --> halo2_examples/src/range_check/example3_broken.rs:32:8
+   |
+32 | struct RangeConstrained<F: FieldExt> {
+   |        ^^^^^^^^^^^^^^^^
+
+warning: struct `RangeCheckConfig` is never constructed
+  --> halo2_examples/src/range_check/example3_broken.rs:38:8
+   |
+38 | struct RangeCheckConfig<F: FieldExt, const NUM_BITS: usize, const RANGE:...
+   |        ^^^^^^^^^^^^^^^^
+
+warning: associated items `configure` and `assign` are never used
+  --> halo2_examples/src/range_check/example3_broken.rs:46:12
+   |
+45 | impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeCheckConfig<F, NUM_BITS, RANGE> {
+   | ------------------------------------------------------------------------------------------------- associated items in this implementation
+46 |     pub fn configure(
+   |            ^^^^^^^^^
+...
+75 |     pub fn assign(
+   |            ^^^^^^
+
+warning: struct `RangeTableConfig` is never constructed
+  --> halo2_examples/src/range_check/example3_broken/table.rs:13:19
+   |
+13 | pub(super) struct RangeTableConfig<F: FieldExt, const NUM_BITS: usize, c...
+   |                   ^^^^^^^^^^^^^^^^
+
+warning: associated items `configure` and `load` are never used
+  --> halo2_examples/src/range_check/example3_broken/table.rs:20:19
+   |
+19 | impl<F: FieldExt, const NUM_BITS: usize, const RANGE: usize> RangeTableConfig<F, NUM_BITS, RANGE> {
+   | ------------------------------------------------------------------------------------------------- associated items in this implementation
+20 |     pub(super) fn configure(meta: &mut ConstraintSystem<F>) -> Self {
+   |                   ^^^^^^^^^
+...
+33 |     pub(super) fn load(&self, layouter: &mut impl Layouter<F>) -> Result<(), Error> {
+   |                   ^^^^
+
+warning: `fibonacci` (lib) generated 15 warnings (run `cargo fix --lib -p fibonacci` to apply 1 suggestion)
+warning: unused variable: `analysis_type`
+  --> korrekt/src/config.rs:21:13
+   |
+21 |         let analysis_type = config["analyzer_input"]["analysis_type"]
+   |             ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_analysis_type`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `c0`
+  --> korrekt/src/sample_circuits/zcash/simple/steps.rs:82:21
+   |
+82 |                 let c0 = region.assign_fixed(|| "c0", self.fixed, 0, || ...
+   |                     ^^ help: if this is intentional, prefix it with an underscore: `_c0`
+
+warning: unused variable: `b2`
+  --> korrekt/src/sample_circuits/zcash/simple/zero_with_fixed.rs:66:25
+   |
+66 |                     let b2 = region.assign_advice(|| "b0", config.a, 1, ...
+   |                         ^^ help: if this is intentional, prefix it with an underscore: `_b2`
+
+warning: unused variable: `out`
+  --> korrekt/src/sample_circuits/zcash/simple/zero_with_fixed.rs:73:25
+   |
+73 |                     let out = region.constrain_equal(b1.cell(), f1.cell(...
+   |                         ^^^ help: if this is intentional, prefix it with an underscore: `_out`
+
+Some errors have detailed explanations: E0308, E0599, E0603, E0616, E0624.
+For more information about an error, try `rustc --explain E0308`.
+warning: `korrekt` (lib) generated 12 warnings
+error: could not compile `korrekt` (lib) due to 62 previous errors; 12 warnings emitted
+a@a-VirtualBox:~/Downloads/halo2-analyzer-main$ 
+
+

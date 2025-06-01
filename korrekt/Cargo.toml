@@ -1,0 +1,63 @@
+[package]
+name = "korrekt"
+version = "0.1.0"
+edition = "2021"
+
+
+
+[patch."https://github.com/privacy-scaling-explorations/halo2curves.git"]
+halo2curves = { git = "https://github.com/quantstamp/halo2curves.git",branch = "analyzer"}
+
+[patch."https://github.com/zcash/halo2.git"]
+zcash_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/zcash-halo2.git", package = "halo2_proofs"}
+
+# For pse_v1 and benchmarks we need comment the first patch and uncomment the second patch
+[patch."https://github.com/privacy-scaling-explorations/halo2.git"]
+pse_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/pse-halo2.git", package = "halo2_proofs"}
+# [patch."https://github.com/privacy-scaling-explorations/halo2.git"]
+# pse_v1_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/v1-halo2.git", package = "halo2_proofs"}
+
+[patch."https://github.com/axiom-crypto/halo2.git"]
+axiom_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/axiom-halo2.git", package = "halo2-axiom"}
+
+[patch."https://github.com/scroll-tech/halo2.git"]
+scroll_halo2_proofs = { git = "https://github.com/Analyzable-Halo2/scroll-halo2.git", package = "halo2_proofs"}
+
+
+[dependencies]
+zcash_halo2_proofs = { git = "https://github.com/zcash/halo2.git", package = "halo2_proofs", optional = true}
+pse_halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git", package = "halo2_proofs", optional = true}
+axiom_halo2_proofs = { git = "https://github.com/axiom-crypto/halo2.git", package = "halo2-axiom", optional = true}
+scroll_halo2_proofs = { git = "https://github.com/scroll-tech/halo2.git", package = "halo2_proofs", optional = true}
+pse_v1_halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git", tag = "v2022_08_19", package = "halo2_proofs", optional = true}
+halo2curves = { git = 'https://github.com/privacy-scaling-explorations/halo2curves', tag = "0.2.1" }
+
+env_logger = "0.9.0"
+log = "0.4.17"
+try-catch = "0.2.2"
+anyhow = "1.0.71"
+regex = "1.8.4"
+num = "0.4.0"
+num-bigint = "0.4.4"
+rayon = "1.5.1"
+ff = "0.13"
+group = "0.13"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.5"
+clap = "3.0"
+lazy_static = "1.4.0"
+
+[lib]
+name = "korrekt"
+path = "src/lib.rs"
+
+[features]
+default = ["use_zcash_halo2_proofs"]
+use_zcash_halo2_proofs = ["zcash_halo2_proofs"]
+use_pse_halo2_proofs = ["pse_halo2_proofs"]
+use_axiom_halo2_proofs = ["axiom_halo2_proofs"]
+use_scroll_halo2_proofs = ["scroll_halo2_proofs"]
+use_pse_v1_halo2_proofs = ["pse_v1_halo2_proofs"]
+
+
+
